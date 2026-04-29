@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Lovallo | Professional Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --text-dark: #2d3436;
+            --text-light: #636e72;
+            --bg-white: #ffffff;
+            --bg-alt: #f8f9fa;
+            --nav-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        /* Sticky Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin: 0 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 160px 20px 100px;
+            text-align: center;
+            background: linear-gradient(180deg, #f1f4f9 0%, #ffffff 100%);
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+            color: #1a1a1a;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 20px;
+        }
+
+        .section-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .bg-alt {
+            background-color: var(--bg-alt);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 2px solid var(--primary-blue);
+            padding-bottom: 10px;
+            width: fit-content;
+        }
+
+        h2 i {
+            color: var(--primary-blue);
+        }
+
+        /* Experience & Education Items */
+        .item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .item h3 {
+            font-size: 1.4rem;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .item .company {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+        }
+
+        .item .date {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+            color: #444;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-blue);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Why Accounting Section */
+        .why-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+            background: white;
+            padding: 40px;
+            border-left: 5px solid var(--primary-blue);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Footer / Contact */
+        footer {
+            padding: 100px 20px;
+            text-align: center;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        footer h2 {
+            border-bottom: none;
+            margin: 0 auto 30px;
+            color: white;
+        }
+
+        .contact-links {
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            color: white;
+            font-size: 1.8rem;
+            margin: 0 25px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            display: inline-block;
+        }
+
+        .contact-links a:hover {
+            color: #4da3ff;
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .hero h1 { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#why">Why Accounting</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="hero" id="about">
+        <img src="ProfilePic.png" alt="Nicholas Lovallo" class="profile-pic">
+        <h1>Nicholas Lovallo</h1>
+        <p>Aspiring Accounting Professional | Rutgers University - New Brunswick</p>
+    </header>
+
+    <section id="education">
+        <div class="section-content">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="item">
+                <h3>Bachelor of Science in Accounting</h3>
+                <p class="company">Rutgers University - New Brunswick</p>
+                <p class="date">Expected Graduation: Spring 2027</p>
+                <p><strong>Relevant Coursework:</strong> Intermediate Accounting I, Managerial Accounting, Financial Accounting, Accounting Information Systems, Financial Management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-alt">
+        <div class="section-content">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            
+            <div class="item">
+                <h3>Wealth Management Intern</h3>
+                <p class="company">Calton & Associates, Inc.</p>
+                <p class="date">Mar 2025 – Aug 2025</p>
+                <ul>
+                    <li>Delivered tailored investment solutions by conducting portfolio analysis and developing tax-efficient strategies for a firm with $200M AUM.</li>
+                    <li>Analyzed client cash positions using a reporting model, identifying over $110,000 in excess funds for strategic investment.</li>
+                    <li>Led a full overhaul of a 50-page internal operations manual, modernizing processes to align with current technologies and compliance best practices.</li>
+                    <li>Streamlined portfolio data and updated household information via MoneyGuidePro to accurately reflect risk tolerances.</li>
+                    <li>Managed daily administrative tasks including client profile updates, account openings/closings, and generating client reports.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>Assistant Manager</h3>
+                <p class="company">CLAUDIES LLC</p>
+                <p class="date">Nov 2023 – Mar 2025</p>
+                <ul>
+                    <li>Mentored and onboarded new employees, guiding them through high-pressure situations and fostering kitchen-staff collaboration.</li>
+                    <li>Managed cash and credit transactions with precision in a fast-paced environment.</li>
+                    <li>Ensured accurate assembly and packaging of items in compliance with strict hygiene and quality standards.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="section-content">
+            <h2><i class="fas fa-bullseye"></i> Why Accounting?</h2>
+            <div class="why-text">
+                "I have a strong interest in exploring diverse areas within the accounting profession, particularly audit and tax. My previous experience in wealth management strengthened my analytical abilities, communication skills, and attention to detail—skills that translate well into the discipline and precision required in accounting. I am eager to continue building a strong technical foundation while contributing meaningful value as I grow professionally in the field."
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="section-content">
+            <h2>Connect With Me</h2>
+            <p>I am eager to discuss opportunities and collaborations.</p>
+            <div class="contact-links">
+                <a href="mailto:nicholaslovallo4@gmail.com" title="Email Me"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nicholaslovallo/" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p style="margin-top: 60px; font-size: 0.85rem; opacity: 0.6;">&copy; 2026 Nicholas Lovallo. Built for GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
