@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC Quest | CPA Exam Prep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="app-header">
+        <div class="logo">ISC_QUEST</div>
+        <div class="user-stats">
+            <span id="streak-display">🔥 0 Days</span>
+            <span id="xp-display">XP: 0</span>
+            <span id="level-tag">System Intern</span>
+        </div>
+    </nav>
+
+    <main id="app-container">
+        
+        <section id="home-view" class="view">
+            <div class="hero">
+                <h1>Ready to Audit?</h1>
+                <p>Select a study mode to increase your mastery.</p>
+            </div>
+            
+            <div class="menu-grid">
+                <button onclick="startQuiz('quick')" class="menu-card">
+                    <h3>Quick Study</h3>
+                    <p>5 Random MCQs</p>
+                </button>
+                <button onclick="startQuiz('mock')" class="menu-card">
+                    <h3>Mock Exam</h3>
+                    <p>20 Timed Questions</p>
+                </button>
+                <button onclick="startQuiz('review')" class="menu-card danger">
+                    <h3>Review Flagged</h3>
+                    <p id="flagged-count">0 Items</p>
+                </button>
+            </div>
+        </section>
+
+        <section id="quiz-view" class="view hidden">
+            <div class="quiz-header">
+                <span id="question-progress">Question 1/5</span>
+                <button id="flag-btn" onclick="toggleFlag()">🚩 Flag</button>
+            </div>
+
+            <div id="question-container">
+                <p id="question-text">Question content will load here...</p>
+                <div id="options-grid">
+                    </div>
+            </div>
+
+            <div id="feedback-area" class="hidden">
+                <p id="logic-text"></p>
+                <button onclick="nextQuestion()" class="next-btn">Next Question ➜</button>
+            </div>
+        </section>
+
+        <section id="results-view" class="view hidden">
+            <h2>Session Complete!</h2>
+            <div class="score-circle">
+                <span id="final-score">0%</span>
+            </div>
+            <p id="xp-gain-text">+0 XP Earned</p>
+            <button onclick="showHome()" class="primary-btn">Return to Hub</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

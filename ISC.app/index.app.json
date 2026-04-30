@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ISC-001",
+    "area": "Information Systems",
+    "topic": "Data Management",
+    "difficulty": "Medium",
+    "question": "An organization uses an Extraction, Transformation, and Loading (ETL) process to move data into a data warehouse. Which of the following is a primary concern during the 'Transformation' phase?",
+    "options": [
+      "Verifying the physical security of the source database.",
+      "Ensuring data integrity and applying business rules to the data.",
+      "Optimizing the read speed of the destination disk.",
+      "Generating the initial metadata for the raw source files."
+    ],
+    "answer": 1,
+    "explanation": "Transformation is where data is cleaned and converted into a consistent format. Ensuring data integrity and following business rules (like date formats or currency conversion) is the core objective here."
+  },
+  {
+    "id": "ISC-002",
+    "area": "Security & Privacy",
+    "topic": "Encryption",
+    "difficulty": "Hard",
+    "question": "In a Public Key Infrastructure (PKI) environment, if Alice wants to send an encrypted message to Bob that only Bob can read, which key should she use?",
+    "options": [
+      "Alice's Private Key",
+      "Alice's Public Key",
+      "Bob's Private Key",
+      "Bob's Public Key"
+    ],
+    "answer": 3,
+    "explanation": "To ensure confidentiality (only Bob can read it), Alice must encrypt the message with Bob's Public Key. Only Bob's corresponding Private Key can decrypt it."
+  },
+  {
+    "id": "ISC-003",
+    "area": "SOC Engagements",
+    "topic": "SOC 1 vs SOC 2",
+    "difficulty": "Medium",
+    "question": "A service organization provides payroll processing for several publicly traded companies. Which report is specifically designed to address controls relevant to the user entities' internal control over financial reporting (ICFR)?",
+    "options": [
+      "SOC 1",
+      "SOC 2",
+      "SOC 3",
+      "SOC for Cybersecurity"
+    ],
+    "answer": 0,
+    "explanation": "SOC 1 reports (SSAE 18) are specifically focused on controls at a service organization that are likely to be relevant to user entities' internal control over financial reporting."
+  },
+  {
+    "id": "ISC-004",
+    "area": "Security & Privacy",
+    "topic": "Access Controls",
+    "difficulty": "Easy",
+    "question": "Which of the following is an example of a 'Detective' control in an IT environment?",
+    "options": [
+      "Requiring multi-factor authentication for all logins.",
+      "Reviewing system access logs for unauthorized entry attempts.",
+      "Implementing a firewall to block specific IP addresses.",
+      "Establishing a strict password complexity policy."
+    ],
+    "answer": 1,
+    "explanation": "Reviewing logs happens *after* an event has occurred to identify issues, making it a detective control. The others are preventative."
+  },
+  {
+    "id": "ISC-005",
+    "area": "Information Systems",
+    "topic": "Business Continuity",
+    "difficulty": "Medium",
+    "question": "A company establishes a disaster recovery site that has all the necessary hardware and updated data mirrors, allowing for an almost instantaneous switchover. This is known as a:",
+    "options": [
+      "Cold Site",
+      "Warm Site",
+      "Hot Site",
+      "Mirror Site"
+    ],
+    "answer": 2,
+    "explanation": "A Hot Site is fully equipped and has the most recent data, allowing for the lowest Recovery Time Objective (RTO)."
+  },
+  {
+    "id": "ISC-006",
+    "area": "Security & Privacy",
+    "topic": "Regulations (HIPAA)",
+    "difficulty": "Medium",
+    "question": "Under the HIPAA Security Rule, which type of safeguard includes 'Workforce Security' and 'Assigned Security Responsibility'?",
+    "options": [
+      "Physical Safeguards",
+      "Technical Safeguards",
+      "Administrative Safeguards",
+      "Encryption Safeguards"
+    ],
+    "answer": 2,
+    "explanation": "Administrative safeguards involve the policies and procedures (like training and assigning a security officer) used to manage the selection and execution of security measures."
+  },
+  {
+    "id": "ISC-007",
+    "area": "Information Systems",
+    "topic": "Change Management",
+    "difficulty": "Hard",
+    "question": "In a secure software development life cycle (SDLC), why is 'Separation of Duties' between developers and production environments critical?",
+    "options": [
+      "To ensure developers have enough time to focus on coding.",
+      "To prevent unauthorized changes from being moved into the live environment.",
+      "To reduce the cost of software licensing.",
+      "To satisfy the requirements of the Marketing department."
+    ],
+    "answer": 1,
+    "explanation": "By preventing developers from having access to 'Production,' you ensure that all code must be reviewed and tested by a separate party before it goes live, reducing the risk of fraud or accidental errors."
+  },
+  {
+    "id": "ISC-008",
+    "area": "SOC Engagements",
+    "topic": "Trust Services Criteria",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT one of the five AICPA Trust Services Criteria used in a SOC 2 report?",
+    "options": [
+      "Security",
+      "Privacy",
+      "Profitability",
+      "Processing Integrity"
+    ],
+    "answer": 2,
+    "explanation": "The five TSC are: Security, Availability, Processing Integrity, Confidentiality, and Privacy. Profitability is not a Trust Service Criterion."
+  },
+  {
+    "id": "ISC-009",
+    "area": "Security & Privacy",
+    "topic": "Risk Management",
+    "difficulty": "Hard",
+    "question": "An organization determines that the cost of a specific security control exceeds the potential loss from the risk it is meant to mitigate. They decide not to implement the control. This is an example of:",
+    "options": [
+      "Risk Mitigation",
+      "Risk Avoidance",
+      "Risk Acceptance",
+      "Risk Transfer"
+    ],
+    "answer": 2,
+    "explanation": "Risk Acceptance occurs when management acknowledges the risk but decides not to take action because the cost of mitigation is too high."
+  },
+  {
+    "id": "ISC-010",
+    "area": "Information Systems",
+    "topic": "Data Integrity",
+    "difficulty": "Easy",
+    "question": "Which of the following is a one-way mathematical function used to ensure data has not been tampered with?",
+    "options": [
+      "Symmetric Encryption",
+      "Asymmetric Encryption",
+      "Hashing",
+      "Steganography"
+    ],
+    "answer": 2,
+    "explanation": "Hashing creates a unique 'fingerprint' of data. If the data changes even slightly, the hash will change, making it a key tool for verifying integrity."
+  }
+]
