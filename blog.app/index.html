@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Lovallo | Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="index.html" class="logo">NL_DEV</a>
+        <div class="links">
+            <a href="#home" onclick="showHome()">Home</a>
+            <a href="#blog" onclick="loadBlogIndex()">Blog</a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <section id="home-view">
+            <h1>Welcome to my Thoughts.</h1>
+            <p>Documenting the intersection of Software Engineering and Finance.</p>
+        </section>
+
+        <section id="blog-index" class="hidden">
+            <h1>Articles</h1>
+            <div id="post-list"></div>
+        </section>
+
+        <section id="post-view" class="hidden">
+            <button onclick="loadBlogIndex()">← Back to Articles</button>
+            <article id="post-content"></article>
+        </section>
+    </main>
+
+    <script src="blog.js"></script>
+</body>
+</html>
